@@ -10,6 +10,6 @@
  */
 public class Condicionales {
     public static void main(String[] args) {
-        System.out.println("Holi");
+        System.out.println("Holi\n Este es solo un ejemplo");
     }
 }
