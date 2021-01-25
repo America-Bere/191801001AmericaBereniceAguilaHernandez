@@ -22,6 +22,6 @@ public class Tacos {
         tacosTotal=tacos*17;
         refrescosTotal=refrescos*10;
         pago=tacosTotal + refrescosTotal;
-        System.out.println("El cliente debe  "+pago);
+        System.out.println("El cliente debe: "+pago);
     }
 }
