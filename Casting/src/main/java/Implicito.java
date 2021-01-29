@@ -8,8 +8,11 @@
  *
  * @author Fam. Aguila Hdez
  */
-public class Condicionales {
+public class Implicito {
     public static void main(String[] args) {
-        System.out.println("Holi\n Este es solo un ejemplo");
+        int valorMenor=3;
+        double valorMayor=valorMenor;
+        System.out.println(valorMayor);
     }
+    
 }
