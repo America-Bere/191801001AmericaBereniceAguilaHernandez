@@ -17,6 +17,5 @@ public class MilimetrosConvertidosEnMetros {
         metros=0.001* milimetros;
         //el numero 0.001 sale de la division 1/100, de la cual el resultado se multiplica por los milimetros
         System.out.println("Los milimetros son en metros: "+metros);
-    }
-    
+    }  
 }

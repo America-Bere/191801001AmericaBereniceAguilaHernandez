@@ -16,6 +16,5 @@ public class HorasEnMinutos {
         horas=scanner.nextInt();
         minutos=horas * 60;
         System.out.println("Tus minutos son: "+minutos);
-    }
-    
+    }   
 }

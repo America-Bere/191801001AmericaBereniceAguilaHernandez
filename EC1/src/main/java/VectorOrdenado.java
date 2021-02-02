@@ -18,7 +18,7 @@ public class VectorOrdenado {
         }
         for(int i=0; i < 2;i++){
             for(int j=1; j < 3; j++){
-                if(vector[i] > vector[j]){
+                if(vector[i] < vector[j]){
                     aux=vector[i];
                     vector[i]=vector[j];
                     vector[j]=aux;
