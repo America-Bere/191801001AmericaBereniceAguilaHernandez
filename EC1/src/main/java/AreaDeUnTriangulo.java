@@ -18,5 +18,4 @@ public class AreaDeUnTriangulo {
         double areaTriangulo=(base * altura)/2;
         System.out.println("El area de tu triangulo es:  "+areaTriangulo);
     }
-    
 }

@@ -22,5 +22,4 @@ public class PerimetroDeUnPoligonoRegular {
         System.out.println("El perimetro de la figura es "+perimetro);
         
     }
-    
 }

@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class MilimetrosConvertidosEnMetros {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        //int milimetros;
         double metros,milimetros; 
         System.out.println("Escribe los milimetros: ");
         milimetros=scanner.nextDouble();
