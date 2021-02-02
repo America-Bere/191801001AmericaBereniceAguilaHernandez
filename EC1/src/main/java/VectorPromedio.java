@@ -1,20 +1,20 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import java.util.Scanner;
 /**
  *
  * @author Fam. Aguila Hdez
  */
-public class NumeroAleatorio {
+public class VectorPromedio {
     public static void main(String[] args) {
-        int max=27;
-        int min=1;
-        int range=max-min;
-        int rand=(int)(Math.random()*range+min);
-        System.out.println(rand);
+        Scanner scanner=new Scanner(System.in);
+        int vec[],espacio=0,aumento=0;
+        do{
+            espacio++;
+        }while(vec[aumento] != ';');
     }
+    
 }
