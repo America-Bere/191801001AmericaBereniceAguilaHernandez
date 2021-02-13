@@ -14,7 +14,7 @@ public class Cancion {
     public double duracion;
     
     //metodos
-    //constructor 
+    //constructor completo
     public Cancion(int orden,String titulo, double duracion){
         this.duracion=duracion;
         this.orden=orden;
@@ -25,6 +25,7 @@ public class Cancion {
             
         }
         
+        //toString
     @Override
         public String toString(){
             return "orden: "+orden+" de la cancion: "+titulo+" con duracion de: "+duracion;
