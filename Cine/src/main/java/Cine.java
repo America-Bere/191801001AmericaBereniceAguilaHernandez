@@ -14,12 +14,12 @@ import java.util.ArrayList;
 public class Cine {
     public String nombreCine;
     public int entrada, salida;
-    public ArrayList <Pelicula> peliculas;
+    public ArrayList <Pelicula> peliculas=new ArrayList();
     public Cine(String nombreCine, int entrada, int salida, ArrayList <Pelicula> peliculas){
         this.entrada=entrada;
         this.salida=salida;
         this.nombreCine=nombreCine;
-        this.peliculas=peliculas;
+        //this.peliculas=peliculas;
     }
     public Cine(){
         
@@ -31,13 +31,6 @@ public class Cine {
                 cartelera += pelicula.titulo+"\n";
            }
         return cartelera;
-    }
-    public String imprimirPelis(){
-        String cartel="";
-        for(Pelicula pelicula:peliculas){
-                cartel+= pelicula.titulo+"\n";
-           }
-        return cartel;
     }
     public boolean horaCine(int hora){
         switch(hora){
@@ -59,7 +52,6 @@ public class Cine {
         this.entrada=entrada;
         this.salida=salida;
         this.nombreCine=nombreCine;
-        this.peliculas=null;
     }
     @Override
     public String toString(){

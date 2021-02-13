@@ -47,6 +47,6 @@ public class TestCine {
             }
         }while(elegir !=0);
           //Cine cine=new Cine("UP", 9, 11, peliculas);
-           System.out.println(cine.imprimirPelis());
+           System.out.println(cine.imprimirPeliculas());
     }
 }
