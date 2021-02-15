@@ -1,14 +1,6 @@
 
 import java.util.ArrayList;
-
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
  * @author Fam. Aguila Hdez
  */
 public class Pelicula {
@@ -38,6 +30,6 @@ public class Pelicula {
     
     @Override
     public String toString(){
-        return "La pelicula: "+titulo+" del genero "+genero+" con la duracion de "+duracion+"\n";
+        return "La pelicula: "+titulo+"\n";
     }
 }

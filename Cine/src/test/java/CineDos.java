@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.util.ArrayList;
+//import java.util.ArrayList;
 //import java.util.Scanner;
 /**
  *
@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class CineDos {
     public static void main(String[] args) {
-        Pelicula peliculaUno=new Pelicula("Black Widow");
+       /* Pelicula peliculaUno=new Pelicula("Black Widow");
         Pelicula peliculaDos=new Pelicula("Gotzila vs Kong");
         Pelicula peliculaTres=new Pelicula("Loved"); 
         //una lista ligada puede ser de un tipo de variable o de una clase
@@ -21,6 +21,6 @@ public class CineDos {
         peliculas.add(peliculaTres);
         peliculas.size(); //muestra el numero de objetos en la lista
         
-        System.out.println(peliculas.size());
+        System.out.println(peliculas.size());*/
     }
 }
