@@ -20,7 +20,6 @@ public class Eliminar {
         Scanner scanner=new Scanner(System.in);
         String url="jdbc:mysql://localhost:3306/usuarios?zeroDateTimeBehavior=CONVERT_TO_NULL";
         try{
-            //crear conexion con base de datos
             Connection conexion=DriverManager.getConnection(url,"root","");
             String SQL="DELETE FROM usuarios WHERE id=? ";
             PreparedStatement declaracion=conexion.prepareStatement(SQL);
