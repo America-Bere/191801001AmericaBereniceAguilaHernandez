@@ -28,8 +28,6 @@ public class Insertar {
         String nom=scanner.nextLine();
         System.out.println("Escribe el nombre la contraseña del usuario: ");
         String con=scanner.nextLine();
-         System.out.println("Estado del usuario\n1=activo    0=no activo");
-        int sta=scanner.nextInt();
         Usuario usuario=new Usuario();
         DaoUsuario.insertar(usuario);
         
