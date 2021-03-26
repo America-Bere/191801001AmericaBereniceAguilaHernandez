@@ -30,7 +30,7 @@ public class DaoUsuario {
                 Usuario usuario=new Usuario(resultado.getInt("id"), resultado.getString("nombre"), resultado.getString("contraseña"), resultado.getString("fecha_de_alta"), resultado.getInt("status"));
                 listUsuarios.add(usuario);
             }
-            Conexion.clase(conexion, resultado, declaracion);
+            Conexion.close(conexion, resultado, declaracion);
             return listUsuarios;
         }
         public static void insertar(Usuario usuario) throws SQLException{

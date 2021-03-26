@@ -10,9 +10,8 @@ package Usuarios;
  * @author Fam. Aguila Hdez
  */
 public class Usuario {
-private int id;
+    private int id,status;
     private String nombre,contraseña,fechaDeAlta;
-    private int status;
     public Usuario(int id, String nombre, String contraseña, String fechaDeAlta, int status) {
         this.id = id;
         this.nombre = nombre;
@@ -22,6 +21,19 @@ private int id;
     }
     public Usuario(){
         
+    }
+
+    public Usuario(String nombre, String contraseña) {
+        this.nombre=nombre;
+        this.contraseña=contraseña;
+    }
+    public Usuario(int id){
+        this.id=id;
+    }
+    public Usuario(String nombre, String contraseña,int status){
+        this.nombre=nombre;
+        this.contraseña=contraseña;
+        this.status=status;
     }
     @Override
     public String toString(){

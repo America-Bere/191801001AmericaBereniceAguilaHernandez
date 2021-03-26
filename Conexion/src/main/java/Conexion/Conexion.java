@@ -15,7 +15,8 @@ public class Conexion {
     //Final: es un modificador que indicia que el atributo es una constante por lo que no se podra cambiar el valor de ningun modo
         private static final String URL="jdbc:mysql://localhost:3306/usuarios?zeroDateTimeBehavior=CONVERT_TO_NULL";
         private static final String USUARIO = "root", PASSWORD = "";
-        private String nombre, contraseña;
+        //private String nombre, contraseña;
+        public static Connection getConnection;
         public static Connection getConnection() throws SQLException{
             return DriverManager.getConnection(URL, USUARIO, PASSWORD);
             //throws SQLException es el try y catch implementado en un metodo
@@ -23,15 +24,15 @@ public class Conexion {
         //Statement declaracion=Conexion.createStatement();
         //String SQL="SELECT * FROM usuarios";
         //throws=de cualquier error que haya, lo va a traer y mostrar
-        public static void clase(Connection conexion) throws SQLException{
+        public static void close(Connection conexion) throws SQLException{
             conexion.close();
         }
-        public static void clase(Connection conexion,ResultSet resultado) throws SQLException{
+        public static void close(Connection conexion,ResultSet resultado) throws SQLException{
             conexion.close();
             resultado.close();
         }
                     //polimorfismo
-        public static void clase(Connection conexion, ResultSet resultado, Statement declaracion) throws SQLException{
+        public static void close(Connection conexion, ResultSet resultado, Statement declaracion) throws SQLException{
             conexion.close();
             resultado.close();
             declaracion.close();
@@ -40,10 +41,10 @@ public class Conexion {
             conexion.close();
             declaracion.close();
         }
-        public Conexion(String nombre, String contraseña) {
+        /*public Conexion(String nombre, String contraseña) {
             this.nombre = nombre;
             this.contraseña = contraseña;
-        }
+        }*/
     
     
     

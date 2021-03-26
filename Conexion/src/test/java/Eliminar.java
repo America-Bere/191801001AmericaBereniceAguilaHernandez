@@ -22,7 +22,7 @@ public class Eliminar {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Escribe el ID: ");
          int id=scanner.nextInt();
-         Usuario usuario=new Usuario();
+         Usuario usuario=new Usuario(id);
          DaoUsuario.eliminar(usuario);
     }
 }

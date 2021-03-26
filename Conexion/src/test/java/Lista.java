@@ -11,8 +11,7 @@ public class Lista {
     public static void main(String[] args) throws SQLException{
         List<Usuario> listUsuarios=new ArrayList<>();
         listUsuarios=DaoUsuario.listaUsuarios();
-        for (Iterator<Usuario> it = listUsuarios.iterator(); it.hasNext();) {
-            Usuario usuario = it.next();
+        for(Usuario usuario:listUsuarios){
             System.out.println(usuario);
         }
     }

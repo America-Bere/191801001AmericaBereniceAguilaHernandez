@@ -28,7 +28,7 @@ public class Actualizar {
         String contra = scanner.nextLine();
         System.out.println("Escribe el nuevo estatus del usuario\n1=activo    0=no activo");
         int status= scanner.nextInt();
-        Usuario usuario=new Usuario();
+        Usuario usuario=new Usuario(nombre,contra,1);
         DaoUsuario.actualizar(usuario);
     }
 }
