@@ -1,4 +1,3 @@
-
 import DaoUsuarios.DaoUsuario;
 import Usuarios.Usuario;
 import java.sql.Connection;
@@ -18,3 +17,19 @@ public class Eliminar {
          DaoUsuario.eliminar(usuario);
     }
 }
+        /*String url="jdbc:mysql://localhost:3306/usuarios?zeroDateTimeBehavior=CONVERT_TO_NULL";
+        try{
+            Connection conexion=DriverManager.getConnection(url,"root","");
+            String SQL="DELETE FROM usuarios WHERE id=? ";
+            PreparedStatement declaracion=conexion.prepareStatement(SQL);
+            System.out.println("Escribe el ID del usuario: ");
+            int id=scanner.nextInt();
+            declaracion.setInt(1, id);
+            declaracion.executeUpdate();
+            declaracion.close();
+            conexion.close();
+            }catch(SQLException ex){
+            ex.printStackTrace(System.out);
+        }
+    }   
+}*/

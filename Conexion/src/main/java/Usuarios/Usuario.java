@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Usuarios;
-
 /**
  *
  * @author Fam. Aguila Hdez
@@ -37,10 +31,10 @@ public class Usuario {
     }
     @Override
     public String toString(){
-        return "El usuario de nombre: "+nombre+" cuenta con el ID: "+id+"\n Su cuenta se dio de alta: "+fechaDeAlta+"\n tiene de contraseña: "+contraseña+" y esta en estado "+status+"\n\n";
+        return nombre+"\n";
     }    
     public String imprimir(){
-        return nombre+"\n ";
+        return  "El usuario de nombre: "+nombre+" cuenta con el ID: "+id+"\n Su cuenta se dio de alta: "+fechaDeAlta+"\n tiene de contraseña: "+contraseña+" y esta en estado "+status+"\n\n";
     }
 
     public int getId() {

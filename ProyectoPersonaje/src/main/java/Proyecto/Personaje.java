@@ -1,32 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Proyecto;
-
 /**
- *
  * @author Fam. Aguila Hdez
  */
 public class Personaje {
     private String nombre,sexo,clan;
-    public Personaje(String nombre, String sexo, String clan){
+    private int id;
+    public Personaje(String nombre, int id, String sexo, String clan){
         this.clan=clan;
         this.nombre=nombre;
         this.sexo=sexo;
+        this.id=id;
     }
     public Personaje(){
         this.clan="";
         this.nombre="";
         this.sexo="";
+        this.id=0;
     }
     @Override
     public String toString(){
-        return "El personaje de sexo: "+getSexo()+" tiene como nombre: "+getNombre()+"\nY pertenece al clan: "+getClan();
+        return getNombre()+"\n";
     }
-    
-    
+    /*public String imprimir(){
+        return "El personaje de sexo: "+getSexo()+" tiene como nombre: "+getNombre()+"\nY pertenece al clan: "+getClan()+"Y tiene como ID: "+getId();
+    }*/
     public String getNombre() {
         return this.nombre;
     }
@@ -44,5 +41,11 @@ public class Personaje {
     }
     public void setClan(String clan) {
         this.clan = clan;
+    }
+    public int getId() {
+       return this.id;
+    }
+    public void setId(int id){
+        this.id=id;
     }
 }

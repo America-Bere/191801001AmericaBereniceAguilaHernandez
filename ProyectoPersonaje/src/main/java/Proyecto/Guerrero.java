@@ -12,8 +12,8 @@ package Proyecto;
 public class Guerrero extends Personaje{
     private int ataque,salud;
     private String categoria,habilidad;
-    public Guerrero(int ataque, int salud,String habilidad, String categoria,String nombre, String sexo, String clan){
-        super(nombre, sexo, clan);
+    public Guerrero(int ataque, int salud,String habilidad, String categoria,String nombre, int id, String sexo, String clan){
+        super(nombre, id, sexo, clan);
         this.ataque=ataque;
         this.salud=salud;
         this.habilidad=habilidad;

@@ -11,8 +11,8 @@ package Proyecto;
  */
 public class Magico extends Guerrero{
     private String hechizo;
-    public Magico(String hechizo, int ataque, int salud,String habilidad, String categoria,String nombre, String sexo, String clan){
-        super(ataque, salud, habilidad, categoria, nombre, sexo, clan);
+    public Magico(String hechizo, int ataque, int salud,String habilidad, String categoria,String nombre, int id, String sexo, String clan){
+        super(ataque, salud, habilidad, categoria, nombre, id, sexo, clan);
         this.hechizo=hechizo;
     }
     public Magico(){
