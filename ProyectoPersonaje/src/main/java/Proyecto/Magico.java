@@ -10,9 +10,10 @@ package Proyecto;
  * @author Fam. Aguila Hdez
  */
 public class Magico extends Guerrero{
-    private String hechizo;
-    public Magico(String hechizo, int ataque, int salud,String habilidad, String categoria,String nombre, int id, String sexo, String clan){
-        super(ataque, salud, habilidad, categoria, nombre, id, sexo, clan);
+    private int id, ataque,salud;
+    private String nombre, sexo,clan,categoria,habilidad,hechizo;
+    public Magico(int id, String nombre, String sexo, String clan, int ataque, int salud, String habilidad, String categoria, String hechizo){
+        super(id,nombre,sexo,clan,ataque, salud, habilidad, categoria);
         this.hechizo=hechizo;
     }
     public Magico(){
@@ -21,7 +22,20 @@ public class Magico extends Guerrero{
     }
     @Override
     public String toString(){
+        return super.getNombre()+"\n";
+    }
+    public String imprimir(){
         return " "+super.getNombre()+" de sexo: "+super.getSexo()+" perteneciente al clan: "+super.getClan()+"\n"+super.getCategoria()+" cuenta con la habilidad: "+super.getHabilidad()+"\nCon ataque de: "+super.getAtaque()+" y de salud: "+super.getSalud()+"\nAl pertenecer a esta categoria tiene como extra realizar:"+getHechizo();
+    }
+    public Magico(String nombre, String sexo, String clan, int ataque, int salud, String habilidad, String categoria,String hechizo) {
+        this.nombre=nombre;
+        this.sexo=sexo;
+        this.clan=clan;
+        this.ataque=ataque;
+        this.salud=salud;
+        this.habilidad=habilidad;
+        this.categoria=categoria;
+        this.hechizo=hechizo;
     }
     public String getHechizo() {
         return this.hechizo;

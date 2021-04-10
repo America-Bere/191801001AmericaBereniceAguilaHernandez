@@ -1,5 +1,5 @@
-import DaoPersonaje.DaoPersonaje;
-import Proyecto.Personaje;
+import DaoGuerreros.DaoGuerrero;
+import Proyecto.Guerrero;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,9 +9,9 @@ import java.sql.*;
  */
 public class Asistencia {
     public static void main(String[] args) throws SQLException{
-        List<Personaje> listPersonajes=new ArrayList<>();
-        listPersonajes=DaoPersonaje.asistenciaPersonajes();
-        for(Personaje personaje:listPersonajes){
+        List<Guerrero> listGuerreros=new ArrayList<>();
+        listGuerreros=DaoGuerrero.asistenciaGuerrero();
+        for(Guerrero personaje:listGuerreros){
             System.out.println(personaje);
          }
     }

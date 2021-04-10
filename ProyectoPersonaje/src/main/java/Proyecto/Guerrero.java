@@ -1,19 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Proyecto;
 
 /**
  *
  * @author Fam. Aguila Hdez
  */
-public class Guerrero extends Personaje{
-    private int ataque,salud;
-    private String categoria,habilidad;
-    public Guerrero(int ataque, int salud,String habilidad, String categoria,String nombre, int id, String sexo, String clan){
-        super(nombre, id, sexo, clan);
+public class Guerrero{
+    private int id, ataque,salud;
+    private String nombre, sexo,clan,categoria,habilidad;
+    public Guerrero(int id, String nombre, String sexo, String clan,int ataque, int salud,String habilidad, String categoria){
+        this.id=id;
+        this.nombre=nombre;
+        this.sexo=sexo;
+        this.clan=clan;
         this.ataque=ataque;
         this.salud=salud;
         this.habilidad=habilidad;
@@ -26,12 +25,31 @@ public class Guerrero extends Personaje{
         this.habilidad="";
         this.categoria="";
     }
-    @Override
-    public String toString(){
-        return " "+super.getNombre()+" de sexo: "+super.getSexo()+" perteneciente al clan: "+super.getClan()+"\n"+categoria+" cuenta con la habilidad: "+habilidad+"\nCon ataque de: "+ataque+" y de salud: "+salud;
+    public Guerrero(int id){
+        this.id=id;
+    }
+    public Guerrero(String clan,int id){
+        this.getClan();
+        this.id=id;
     }
 
+    public Guerrero(String nombre, String sexo, String clan, int ataque, int salud, String habilidad, String categoria) {
+        this.nombre=nombre;
+        this.sexo=sexo;
+        this.clan=clan;
+        this.ataque=ataque;
+        this.salud=salud;
+        this.habilidad=habilidad;
+        this.categoria=categoria;
+    }
 
+    @Override
+    public String toString(){
+        return nombre+"\n";
+    }
+    public String imprimir(){
+        return nombre+"  "+id+"  "+sexo+"  "+clan+"  "+categoria+"  "+habilidad+"  "+ataque+" "+salud;
+    }
     public int getAtaque() {
         return this.ataque;
     }
@@ -56,5 +74,28 @@ public class Guerrero extends Personaje{
     public void setHabilidad(String habilidad) {
         this.habilidad = habilidad;
     }
-    
+    public int getId() {
+        return this.id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getNombre() {
+        return this.nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getSexo() {
+        return this.sexo;
+    }
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    public String getClan() {
+        return this.clan;
+    }
+    public void setClan(String clan) {
+        this.clan = clan;
+    }
 }
