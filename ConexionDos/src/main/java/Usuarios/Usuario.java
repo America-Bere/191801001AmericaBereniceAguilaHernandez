@@ -30,10 +30,14 @@ public class Usuario {
     public Usuario(int id){
         this.id=id;
     }
-    public Usuario(String nombre, String contraseña,int status){
+    public Usuario(String contraseña,int id){
+        this.contraseña=contraseña;
+        this.id=id;
+    }
+    public Usuario(String nombre, String contraseña,int id){
         this.nombre=nombre;
         this.contraseña=contraseña;
-        this.status=status;
+        this.id=id;
     }
     @Override
     public String toString(){

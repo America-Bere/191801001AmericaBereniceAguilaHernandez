@@ -28,9 +28,20 @@ public class Guerrero{
     public Guerrero(int id){
         this.id=id;
     }
-    public Guerrero(String clan,int id){
-        this.getClan();
+    public Guerrero(int id,String clan){
         this.id=id;
+        this.clan=clan;
+    }
+    public Guerrero(int id,String clan,int ataque,int salud){
+        this.id=id;
+        this.clan=clan;
+        this.ataque=ataque;
+        this.salud=salud;
+    }
+    public Guerrero(String clan,int ataque,int salud){
+        this.clan=clan;
+        this.ataque=ataque;
+        this.salud=salud;
     }
 
     public Guerrero(String nombre, String sexo, String clan, int ataque, int salud, String habilidad, String categoria) {
@@ -45,7 +56,7 @@ public class Guerrero{
 
     @Override
     public String toString(){
-        return nombre+"\n";
+        return "<ID: "+id+"> Nombre: "+nombre+" Clan: "+clan+"  Ataque: "+ataque+" Salud: "+salud;
     }
     public String imprimir(){
         return nombre+"  "+id+"  "+sexo+"  "+clan+"  "+categoria+"  "+habilidad+"  "+ataque+" "+salud;

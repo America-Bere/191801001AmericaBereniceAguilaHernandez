@@ -51,12 +51,14 @@ public class DaoGuerrero {
             Conexion.close(conexion, declaracion);
         }
      public static void actualizar(Guerrero guerrero) throws SQLException{
-            Connection conexion = Conexion.getConnection();
-            SQL="UPDATE  guerrero SET clan = ? WHERE id=?";
-            PreparedStatement declaracion=conexion.prepareStatement(SQL);
-            declaracion.setString(1, guerrero.getClan());
-            declaracion.setInt(2, guerrero.getId());
-            declaracion.executeUpdate();
-            Conexion.close(conexion, declaracion);
+           Connection conexion = Conexion.getConnection();
+           SQL = "UPDATE guerrero SET clan = ?,ataque=?,salud=? WHERE id = ?";
+           PreparedStatement declaracion = conexion.prepareStatement(SQL);
+           declaracion.setString(1, guerrero.getClan());
+           declaracion.setInt(2, guerrero.getAtaque());
+           declaracion.setInt(3, guerrero.getSalud());
+           declaracion.setInt(4, guerrero.getId());
+           declaracion.executeUpdate();
+           Conexion.close(conexion, declaracion);
         }
 }

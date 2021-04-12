@@ -41,5 +41,24 @@ public class DaoMagico {
             declaracion.executeUpdate();
             Conexion.close(conexion, declaracion);
         }
+    public static void eliminar(Magico magico) throws SQLException{
+            Connection conexion = Conexion.getConnection();
+            SQL="DELETE FROM magico WHERE id=? ";
+            PreparedStatement declaracion=conexion.prepareStatement(SQL);
+            declaracion.setInt(1, magico.getId());
+            declaracion.executeUpdate();
+            Conexion.close(conexion, declaracion);
+        }
+    public static void actualizar(Magico magico) throws SQLException{
+           Connection conexion = Conexion.getConnection();
+           SQL = "UPDATE magico SET clan = ?,ataque=?,salud=? WHERE id = ?";
+           PreparedStatement declaracion = conexion.prepareStatement(SQL);
+           declaracion.setString(1, magico.getClan());
+           declaracion.setInt(2, magico.getAtaque());
+           declaracion.setInt(3, magico.getSalud());
+           declaracion.setInt(4, magico.getId());
+           declaracion.executeUpdate();
+           Conexion.close(conexion, declaracion);
+        }
     
 }

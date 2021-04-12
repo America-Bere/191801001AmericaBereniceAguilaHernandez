@@ -1,13 +1,13 @@
-import DaoGuerreros.DaoGuerrero;
-import Proyecto.Guerrero;
+import DaoMitologicos.DaoMitologico;
+import Proyecto.Mitologico;
 import java.sql.SQLException;
 import java.util.Scanner;
 /*
  * @author Fam. Aguila Hdez
  */
-public class ActualizarGuerrero {
+public class ActualizarMitologico {
     public static void main(String[] args) throws SQLException {
-        Scanner scanner=new Scanner(System.in);
+       Scanner scanner=new Scanner(System.in);
         System.out.println("Escribe el ID del usuario: ");
         int id=scanner.nextInt();
         scanner.nextLine();
@@ -17,8 +17,8 @@ public class ActualizarGuerrero {
         int ataque=scanner.nextInt();
         System.out.println("Cantidad de salud: ");
         int salud=scanner.nextInt();
-        //Guerrero guerrero=new Guerrero (id,clan);
-        Guerrero guerrero=new Guerrero (id,clan,ataque,salud);
-        DaoGuerrero.actualizar(guerrero);
+        //Mitologico mitologico=new Mitologico (id,clan);
+        Mitologico mitologico=new Mitologico (id,clan,ataque,salud);
+        DaoMitologico.actualizar(mitologico); 
     }
 }

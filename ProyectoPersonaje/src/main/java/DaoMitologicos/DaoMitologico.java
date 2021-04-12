@@ -42,4 +42,23 @@ public class DaoMitologico {
             declaracion.executeUpdate();
             Conexion.close(conexion, declaracion);
         }
+    public static void eliminar(Mitologico mitologico) throws SQLException{
+            Connection conexion = Conexion.getConnection();
+            SQL="DELETE FROM mitologico WHERE id=? ";
+            PreparedStatement declaracion=conexion.prepareStatement(SQL);
+            declaracion.setInt(1, mitologico.getId());
+            declaracion.executeUpdate();
+            Conexion.close(conexion, declaracion);
+        }
+    public static void actualizar(Mitologico mitologico) throws SQLException{
+           Connection conexion = Conexion.getConnection();
+           SQL = "UPDATE mitologico SET clan = ?,ataque=?,salud=? WHERE id = ?";
+           PreparedStatement declaracion = conexion.prepareStatement(SQL);
+           declaracion.setString(1, mitologico.getClan());
+           declaracion.setInt(2, mitologico.getAtaque());
+           declaracion.setInt(3, mitologico.getSalud());
+           declaracion.setInt(4, mitologico.getId());
+           declaracion.executeUpdate();
+           Conexion.close(conexion, declaracion);
+        }
 }
