@@ -2,10 +2,9 @@ package Proyecto;
 /**
  * @author Fam. Aguila Hdez
  */
-public class Mitologico extends Magico{
-    private String tranformacion;
+public class Mitologico {
     private int id, ataque,salud;
-    private String nombre, sexo,clan,categoria,habilidad,hechizo;
+    private String nombre, sexo,clan,categoria,habilidad,hechizo,tranformacion;
     public Mitologico(int id, String nombre, String sexo, String clan, int ataque, int salud, String habilidad, String categoria, String hechizo, String transformacion){
         this.id=id;
         this.nombre=nombre;
@@ -24,7 +23,8 @@ public class Mitologico extends Magico{
     }
     @Override
     public String toString(){
-        return "<ID: "+id+"> Nombre: "+nombre+" Clan: "+clan+" Ataque: "+ataque+" Salud: "+salud;
+        //return "<ID: "+id+"> Nombre: "+nombre+" Clan: "+clan+" Ataque: "+ataque+" Salud: "+salud;
+        return "<ID: "+id+"> Nombre: "+nombre+" Sexo: "+sexo+" Clan: "+clan+"  Ataque: "+ataque+" Salud: "+salud+" Habilidad: "+habilidad+" Ataque: "+ataque+" Categoria: "+categoria+" Hechizo: "+hechizo+" Transformacion: "+tranformacion;
     }
     public Mitologico(int id,String clan){
         this.id=id;

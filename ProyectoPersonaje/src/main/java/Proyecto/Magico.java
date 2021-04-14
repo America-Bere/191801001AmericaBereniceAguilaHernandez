@@ -42,7 +42,8 @@ public class Magico extends Guerrero{
     }
     @Override
     public String toString(){
-        return "<ID: "+id+"> Nombre: "+nombre+" Clan: "+clan+" Ataque: "+ataque+" Salud: "+salud;
+        //eturn "<ID: "+id+"> Nombre: "+nombre+" Clan: "+clan+" Ataque: "+ataque+" Salud: "+salud;
+        return "<ID: "+id+"> Nombre: "+nombre+" Sexo: "+sexo+" Clan: "+clan+"  Ataque: "+ataque+" Salud: "+salud+" Habilidad: "+habilidad+" Ataque: "+ataque+" Categoria: "+categoria+" Hechizo: "+hechizo;
     }
     /*public String imprimir(){
         return " "+super.getNombre()+" de sexo: "+super.getSexo()+" perteneciente al clan: "+super.getClan()+"\n"+super.getCategoria()+" cuenta con la habilidad: "+super.getHabilidad()+"\nCon ataque de: "+super.getAtaque()+" y de salud: "+super.getSalud()+"\nAl pertenecer a esta categoria tiene como extra realizar:"+getHechizo();

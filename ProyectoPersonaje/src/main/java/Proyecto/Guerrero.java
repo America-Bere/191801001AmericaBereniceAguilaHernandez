@@ -56,7 +56,7 @@ public class Guerrero{
 
     @Override
     public String toString(){
-        return "<ID: "+id+"> Nombre: "+nombre+" Clan: "+clan+"  Ataque: "+ataque+" Salud: "+salud;
+        return "<ID: "+id+"> Nombre: "+nombre+" Sexo: "+sexo+" Clan: "+clan+"  Ataque: "+ataque+" Salud: "+salud+" Habilidad: "+habilidad+" Ataque: "+ataque+" Categoria: "+categoria;
     }
     public String imprimir(){
         return nombre+"  "+id+"  "+sexo+"  "+clan+"  "+categoria+"  "+habilidad+"  "+ataque+" "+salud;

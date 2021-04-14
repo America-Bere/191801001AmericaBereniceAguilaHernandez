@@ -29,7 +29,7 @@ public class Clan {
         this.nombre=nombre;
     }
     public String toString(){
-        return "<ID:  "+getId()+"> Clan: "+getNombre()+" Con un total de "+getParticipantes()+" participantes";
+        return "<ID:  "+getId()+"> Clan: "+getNombre()+" Con un total de "+getParticipantes()+" participantes ";
     }
     public int getId() {
         return this.id;
